@@ -1,0 +1,18 @@
+﻿@model ASP.NETMVCWebApp.Models.GuestResponse
+
+@{
+    ViewBag.Title = "Thanks";
+}
+
+<body>
+    <h1>Thank You @Html.Encode(Model.Name)</h1>
+    @if (Model.WillAttend == true)
+    {
+        <p>It's great that you're coming. The drinks are already in the fridge!</p>
+    }
+    else
+    {
+        <p> Sorry to hear you can't make it,but thanks for letting us know.</p>
+    }
+</body>
+

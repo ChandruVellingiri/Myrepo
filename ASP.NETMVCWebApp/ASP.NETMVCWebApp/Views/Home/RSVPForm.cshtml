@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "RSVPForm";
+}
+
+<body>
+    <h2>RSVPForm</h2>
+    @Html.ValidationSummary()
+    @using(Html.BeginForm())
+    {
+        <p>Your Name: @Html.TextBox("Name") @Html.ValidationMessage("Name")</p>
+        <p>Your Email: @Html.TextBox("Email") </p>
+        <p>Your Phone: @Html.TextBox("Phone")</p>
+        <p>
+            Will you Attend? 
+            @Html.DropDownList("WillAttend", new[]
+            {
+                new SelectListItem { Text = "Yes,I'll be there" , Value = bool.TrueString },
+                new SelectListItem { Text = "No, I Can't Come" , Value = bool.FalseString }
+            },"Choose an option")
+        </p>
+        <input type="submit" value="Submit RSVP" />
+    }
+</body>

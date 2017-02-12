@@ -1,0 +1,17 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<body>
+    <h1>New Year's Party</h1>
+    <p>
+        @ViewData["greeting"]! We are going to have an exciting party.<br />
+        <img src="~/Content/images/Party.png" />
+    </p>
+    @Html.ActionLink("RSVP Now", "RSVPForm")
+
+
+
+    @*@ViewData["greeting"], World (from the view)!*@
+</body>

@@ -29,5 +29,7 @@ namespace ASP.NETMVCWebApp.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ASP.NETMVCWebApp.Models.PersonDetails> PersonDetails { get; set; }
     }
 }

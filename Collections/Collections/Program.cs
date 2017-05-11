@@ -11,6 +11,9 @@ namespace Collections
     {
         static void Main(string[] args)
         {
+
+            
+
             //Value Type Array
             int[] valuetype = new int[3];
 
@@ -37,7 +40,7 @@ namespace Collections
             myAL.Add("World");
             myAL.Add("!");
 
-            //HashTable 
+            //HashTable - Stores only Unique Key
             Hashtable ht = new Hashtable();
             ht.Add("txt", "notepad.exe");
             ht.Add("bmp", "paint.exe");
